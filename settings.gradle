@@ -1,0 +1,8 @@
+include ':app'
+include ':feed'
+include ':detail'
+include ':network'
+include ':imageloading'
+include ':style'
+include ':coreutils'
+rootProject.name='devfestnineteen'

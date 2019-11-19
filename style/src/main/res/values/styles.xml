@@ -1,0 +1,16 @@
+<resources>
+    <style name="FeedHeadlinerTitleStyle" parent="Theme.AppCompat.DayNight">
+        <item name="android:lines">5</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FeedItemTitleStyle" parent="Theme.AppCompat.DayNight">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FeedItemContentStyle" parent="Theme.AppCompat.DayNight">
+        <item name="android:lines">3</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_horizontal_padding">25dp</dimen>
+    <dimen name="app_top_padding">20dp</dimen>
+    <dimen name="app_bottom_padding">40dp</dimen>
+
+
+    <dimen name="loading_spinner_width">50dp</dimen>
+    <dimen name="loading_spinner_height">50dp</dimen>
+
+</resources>

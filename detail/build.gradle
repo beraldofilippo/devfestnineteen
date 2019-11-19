@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+        testInstrumentationRunner rootProject.testInstrumentationRunner
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled rootProject.minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.kotlin_version"
+
+    implementation "androidx.appcompat:appcompat:$rootProject.appcompat_version"
+    implementation "androidx.core:core-ktx:$rootProject.ktx_version"
+
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintlayout_version"
+
+    implementation "org.koin:koin-android:$rootProject.koin_version"
+    implementation "org.koin:koin-android-scope:$rootProject.koin_version"
+    implementation "org.koin:koin-android-ext:$rootProject.koin_version"
+
+    implementation project(path: ':style')
+    implementation project(path: ':imageloading')
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_guideline_inset">100dp</dimen>
+
+    <dimen name="feed_item_image_size">80dp</dimen>
+    <dimen name="feed_headliner_image_size">100dp</dimen>
+
+    <dimen name="feed_divider_inset_vertical">4dp</dimen>
+    <dimen name="feed_divider_inset_horizontal">10dp</dimen>
+</resources>

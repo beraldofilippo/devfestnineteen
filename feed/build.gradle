@@ -1,0 +1,69 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+        testInstrumentationRunner rootProject.testInstrumentationRunner
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled rootProject.minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.kotlin_version"
+
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.lifecycleextension_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    kapt "androidx.lifecycle:lifecycle-compiler:$rootProject.lifecyclecompiler_version"
+
+    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:$rootProject.reactivestreamslifecycle_version"
+
+    implementation "androidx.recyclerview:recyclerview:$rootProject.recyclerview_version"
+
+    implementation "androidx.appcompat:appcompat:$rootProject.appcompat_version"
+    implementation "androidx.core:core-ktx:$rootProject.ktx_version"
+
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofit_version"
+
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintlayout_version"
+
+    implementation "org.koin:koin-android:$rootProject.koin_version"
+    implementation "org.koin:koin-android-scope:$rootProject.koin_version"
+    implementation "org.koin:koin-android-viewmodel:$rootProject.koin_version"
+    implementation "org.koin:koin-android-ext:$rootProject.koin_version"
+
+    implementation "androidx.room:room-runtime:$rootProject.roomruntime_version"
+    kapt "androidx.room:room-compiler:$rootProject.roomcompiler_version"
+    implementation "androidx.room:room-rxjava2:$rootProject.roomrxjava2_version"
+
+    testImplementation "junit:junit:$rootProject.junit_version"
+    testImplementation "org.mockito:mockito-core:$rootProject.mockitocore_version"
+    testImplementation "org.mockito:mockito-inline:$rootProject.mockitoinline_version"
+    testImplementation "androidx.arch.core:core-testing:$rootProject.archcoretesting_version"
+
+    implementation project(path: ':network')
+    implementation project(path: ':style')
+    implementation project(path: ':imageloading')
+    implementation project(path: ':coreutils')
+}

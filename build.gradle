@@ -1,0 +1,82 @@
+buildscript {
+    ext.kotlin_version = '1.3.41'
+
+    ext {
+        versionCode = 1
+        versionName = '1.0.0'
+
+        compileSdkVersion = 29
+        targetSdkVersion = 29
+        minSdkVersion = 21
+        buildToolsVersion = '29.0.2'
+
+        testInstrumentationRunner = 'androidx.test.runner.AndroidJUnitRunner'
+
+        minifyEnabled = false
+
+        kotlin_version = '1.3.41'
+
+        nav_version = '2.1.0'
+
+        appcompat_version = '1.1.0'
+        constraintlayout_version = '1.1.3'
+        recyclerview_version = '1.1.0-beta04'
+        material_version = '1.1.0-alpha10'
+
+        lifecycleextension_version = '2.0.0'
+        lifecyclecompiler_version = '2.0.0'
+        archcoretesting_version = '2.0.0'
+        archpersistenceroomtesting_version = '2.0.0'
+        viewmodelktx_version = '2.0.0'
+        reactivestreamslifecycle_version = '2.0.0'
+
+        ktx_version = '1.1.0'
+
+        glide_version = '4.9.0'
+
+        rxjava_version = '2.2.12'
+        rxandroid_version = '2.1.1'
+
+        retrofit_version = '2.6.1'
+        gson_version = '2.6.1'
+        adapterrxjava2_version = '2.6.1'
+
+        roomruntime_version = '2.1.0'
+        roomcompiler_version = '2.1.0'
+        roomrxjava2_version = '2.1.0'
+
+        junit_version = '4.12'
+        androidxextjunit_version = '1.1.1'
+        testrunner_version = '1.2.0'
+        espressocore_version = '3.2.0'
+        mockitocore_version = '3.0.0'
+        mockitoinline_version = '3.0.0'
+
+        koin_version = '2.0.1'
+    }
+
+    repositories {
+        google()
+        jcenter()
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

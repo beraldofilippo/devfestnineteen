@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+
+        <!-- Optional, if drawing behind the status bar too -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorAccent">@color/primaryDarkColor</item>
+        <item name="colorPrimaryVariant">@color/primaryLightColor</item>
+        <item name="colorOnPrimary">@color/onPrimaryColor</item>
+
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:textColorSecondary">@color/secondaryTextColor</item>
+
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/onSecondaryColor</item>
+
+        <item name="android:colorBackground">@color/secondaryDarkColor</item> <!-->The background color appears behind scrollable content.</!-->
+        <item name="colorOnBackground">@color/onPrimaryColor</item> <!-->A color that passes accessibility guidelines for text/iconography when drawn on top of the background color.</!-->
+        <item name="colorSurface">@color/secondaryLightColor</item> <!-->Surface colors affect surfaces of components, such as cards, sheets, and menus.</!-->
+        <item name="colorOnSurface">@color/onPrimaryColor</item> <!-->A color that passes accessibility guidelines for text/iconography when drawn on top of the surface color.</!-->
+        <item name="colorError">@color/red</item> <!-->Error color indicates errors states, for components such as text fields.</!-->
+        <item name="colorOnError">@color/white</item> <!-->A color that passes accessibility guidelines for text/iconography when drawn on top of the error color.</!-->
+    </style>
+
+    <style name="NoAnimationAppTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>

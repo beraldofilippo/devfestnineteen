@@ -1,0 +1,13 @@
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.kotlin_version"
+
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.gson_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.adapterrxjava2_version"
+
+    implementation "org.koin:koin-android:$rootProject.koin_version"
+    implementation "org.koin:koin-android-scope:$rootProject.koin_version"
+    implementation "org.koin:koin-android-ext:$rootProject.koin_version"
+}

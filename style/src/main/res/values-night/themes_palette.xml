@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#4e0d3a</color>
+    <color name="primaryLightColor">#7c3a64</color>
+    <color name="primaryDarkColor">#280015</color>
+    <color name="secondaryColor">#880e4f</color>
+    <color name="secondaryLightColor">#bc477b</color>
+    <color name="secondaryDarkColor">#560027</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#ffffff</color>
+
+    <color name="onPrimaryColor">@color/white</color>
+    <color name="onSecondaryColor">@color/white</color>
+
+    <color name="navigationBarColor">#66000000</color>
+</resources>
